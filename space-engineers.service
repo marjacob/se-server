@@ -1,0 +1,25 @@
+[Unit]
+Description = Space Engineers
+Requires = docker.service
+After = docker.service
+
+[Service]
+User = saiban
+Group = saiban
+
+Restart = always
+StandardInput = null
+StandardOutput = journal
+StandardError = journal
+
+ExecStart = /usr/bin/docker run -t \
+	-p 27016:27016/udp \
+	-v /home/saiban/games/space-engineers:/host \
+	--name space_engineers_server \
+	saiban/space-engineers
+ExecStop = /usr/bin/docker stop space_engineers_server ; \
+	/usr/bin/docker rm -f space_engineers_server ; \
+	/bin/chmod 666 /dev/null
+
+[Install]
+WantedBy = local.target
