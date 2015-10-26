@@ -44,6 +44,7 @@ sudo cp games/space-engineers/docker/space-engineers.service /etc/systemd/system
 ```
 
 - **Build the image!**
+
 This will take a while.
 
 ```bash
