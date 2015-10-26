@@ -43,6 +43,13 @@ git clone git@github.com:marjacob/se-server.git games/space-engineers/docker
 sudo cp games/space-engineers/docker/space-engineers.service /etc/systemd/system
 ```
 
+- **Build the image!**
+This will take a while.
+
+```bash
+games/space-engineers/docker/build.sh
+```
+
 ## Managing the server
 
 ### Starting the server
