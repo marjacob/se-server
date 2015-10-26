@@ -51,6 +51,9 @@ This will take a while.
 games/space-engineers/docker/build.sh
 ```
 
+## Updating
+Update Space Engineers by replacing the `DedicatedServer.zip` by an updated version and restarting the server.
+
 ## Managing the server
 
 ### Starting the server
