@@ -7,7 +7,7 @@ MAINTAINER Martin Røed Jacobsen <martin@saiban.no>
 
 # Creating the wine user and setting up dedicated non-root environment.
 # Replace 1001 by your user id (id -u) for X sharing.
-RUN useradd -u 109 -d /home/wine -m -s /bin/bash wine
+RUN useradd -u 256 -d /home/wine -m -s /bin/bash wine
 ENV HOME /home/wine
 WORKDIR /home/wine
 
