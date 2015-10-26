@@ -12,7 +12,7 @@ Perform the following steps in the written order.
 - Create a new system user account which will own the container. The files in this repository assumes that the new user is named `saiban`. You can of course change this to whatever you prefer. Please note that the user ID must correspond to the ID specified in the Dockerfile. If you change it here, you should change it there.
 
 ```bash
-adduser --system --home /home/saiban --uid 256 --group  --gecos "Space Engineers" saiban
+adduser --system --home /home/saiban --uid 256 --group --gecos "Space Engineers" saiban
 ```
 
 - Change to the new user by issuing the following command.
