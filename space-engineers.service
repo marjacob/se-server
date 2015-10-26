@@ -14,7 +14,7 @@ StandardError = journal
 
 ExecStart = /usr/bin/docker run -t \
 	-p 27016:27016/udp \
-	-v /home/saiban/games/space-engineers:/host \
+	-v /home/saiban/games/space-engineers/data:/host \
 	--name space_engineers_server \
 	saiban/space-engineers
 ExecStop = /usr/bin/docker stop space_engineers_server ; \
