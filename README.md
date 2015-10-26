@@ -78,4 +78,4 @@ sudo journalctl --no-tail -f -u space-engineeers
 ## Additional notes
 Running Space Engineers this way requires a helper program called `sigmap` which I developed for this use specifically. It is cloned and built by the Dockerfile and should not add any additional overhead. Because Space Engineers ignores `SIGTERM` which is sent by Docker to shut down the service, `sigmap` catches that signal and forwards `SIGINT` to Space Engineers.
 
-See `https://github.com/marjacob/sigmap` for more information.
+See [here](https://github.com/marjacob/sigmap "sigmap") for more information.
