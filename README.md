@@ -15,10 +15,11 @@ Perform the following steps in the written order.
 adduser --system --home /home/saiban --uid 256 --group --gecos "Space Engineers" saiban
 ```
 
-- Change to the new user by issuing the following command.
+- Change to the new user and move into its home directory by issuing the following commands.
 
 ```bash
 sudo -u saiban /bin/bash
+cd
  ```
 - Create the required directory structure.
 
@@ -52,7 +53,7 @@ games/space-engineers/docker/build.sh
 ```
 
 ## Updating
-Update Space Engineers by replacing the `DedicatedServer.zip` by an updated version and restarting the server.
+Update Space Engineers by replacing the `DedicatedServer.zip` with an updated version and restarting the server.
 
 ## Managing the server
 
