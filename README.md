@@ -80,3 +80,6 @@ sudo journalctl --no-tail -f -u space-engineeers
 Running Space Engineers this way requires a helper program called `sigmap` which I developed for this use specifically. It is cloned and built by the Dockerfile and should not add any additional overhead. Because Space Engineers ignores `SIGTERM` which is sent by Docker to shut down the service, `sigmap` catches that signal and forwards `SIGINT` to Space Engineers.
 
 See [here](https://github.com/marjacob/sigmap "sigmap") for more information.
+
+## Credits
+The original `Dockerfile` was written by [webanck](https://github.com/webanck "webanck") and can be found [here](https://github.com/webanck/docker-wine-steam "Steam with Docker").
