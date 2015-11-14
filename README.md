@@ -36,7 +36,7 @@ git clone git@github.com:marjacob/se-server.git games/space-engineers/docker
 
 - Obtain a copy of the most current `DedicatedServer.zip` and place it in `~/games/space-engineers/data`. You will usually find it in `[...]\SteamApps\SpaceEngineers\Tools\DedicatedServer.zip` (do not extract its contents).
 
-- Upload your `SpaceEngineers-Dedicated.cfg` and place it in the same folder as `DedicatedServer.zip`. Use the one in this repository and edit it to your liking if you do not already have one.
+- Upload your `SpaceEngineers-Dedicated.cfg` and place it in `~/games/space-engineers/data/Space Engineers`. Use the one in this repository and edit it to your liking if you do not already have one.
 
 - Copy `space-engineers.service` from this repository to `/etc/systemd/system`. Do not forget to change the `User` and `Group` setting in this file if you did not go with the defaults.
 
